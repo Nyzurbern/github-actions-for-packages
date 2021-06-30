@@ -8,7 +8,7 @@ on:
       - "**Dockerfile**"
 jobs:
   build:
-    Build-and-Push-Docker-Image:
+   Build-and-Push-Docker-Image:
     runs-on: ubuntu-latest
     needs: test
     name: Docker Build, Tag, Push
@@ -29,9 +29,6 @@ jobs:
         registry: docker.pkg.github.com
         repository: Nyzurbern/github-actions-for-packages/tic-tac-toe
         tag_with_sha: true
-
-    runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v1
       - name: npm install and build webpack

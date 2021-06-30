@@ -29,7 +29,6 @@ jobs:
         repository: Nyzurbern/github-actions-for-packages/tic-tac-toe
         tag_with_sha: true
 
-    runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v1
